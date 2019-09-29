@@ -6,4 +6,4 @@ def test_button_add_to_basket(browser):
     button1 = browser.find_element_by_class_name(
         "btn.btn-lg.btn-primary.btn-add-to-basket"
     )
-    assert button1.get_attribute('type') == 'submit'
+    assert browser.find_element_by_class_name("btn-add-to-basket"), "Button is not available"
